@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslateblue;
+ 
+}
+.todocontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 50%;
+  padding: 40px;
+  margin-top:30px ;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.addbtn{
+  width: 15%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+  transition: all .3s ease;
+}
+.addbtn:hover{
+  background-color: white;
+  color: darkslateblue;
+}
+h1{
+  color: white;
+}
+.todo-list{
+  width: 100%;
+  display: flex;
+  flex-direction:column ;
+  gap: 10px;
+}
+
+.todo-list .todo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px ;
+  border-radius: 10px;
+  background-color: white;
+  transition: all .3s ease;
+}
+.todo-list .todo li{
+  list-style: none;
+  color: darkslateblue;
+}
+.todo-list .todo .btns{
+  display: flex;
+  gap: 10px;
+}
+.todo-list .todo .btns button{
+  background-color: transparent;
+  border: none;
+}
+.todo-list .todo .btns button i{
+  font-size: 15px;
+  color: darkslateblue;
+}
+
+#completed{
+  text-decoration: line-through;
+  opacity: .7;
+  transform:scale(.9);
+}
+
+.completeBtn{
+  background-color: darkslateblue !important;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
